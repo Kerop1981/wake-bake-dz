@@ -110,8 +110,6 @@
 
 .about__grid-text {}
 
-/* ========================================================= */
-
 .program {}
 
 .program__top {
@@ -374,8 +372,6 @@
     max-width: 274px;
 }
 
-/* ================================================ */
-
 .gallery {}
 
 .gallery__inner {
@@ -499,7 +495,6 @@
     width: 100%;
 }
 
-/* ================================================ */
 
 .testimonials {}
 
@@ -667,15 +662,6 @@
 
 
 
-
-
-
-/* ================================================ */
-/* ================================================ */
-/* ================================================ */
-/* ================================================ */
-
-
 @media (max-width: 1200px) {
     .hero__img {
         margin: 0;
@@ -688,8 +674,6 @@
         margin-top: 30px;
     }
 
-    /* ----------- */
-
     .program__top {
         flex-direction: column;
         align-items: stretch;
@@ -699,7 +683,6 @@
         flex-wrap: wrap;
     }
 
-    /* ----------- */
 
     .footer__inner {
         justify-content: space-between;
@@ -725,7 +708,6 @@
         grid-column: 1/-1;
     }
 
-    /* -------------- */
 
     .accordion-list__control {
         padding: 25px 30px;
@@ -767,7 +749,6 @@
         display: flex;
     }
 
-    /* ----------- */
 
     .program__action {
         max-width: none;
@@ -778,7 +759,6 @@
         display: none;
     }
 
-    /* ----------- */
 
     .gallery__inner {
         grid-template: none;
@@ -792,14 +772,12 @@
         display: none;
     }
 
-    /* ----------- */
 
     .testimonials__scrollbar.swiper-scrollbar {
         width: 50%;
         margin: 0 auto;
     }
 
-    /* ----------- */
 
     .footer__inner {
         justify-content: center;
@@ -844,7 +822,6 @@
         margin: 0 0 30px;
     }
 
-    /* ---------------- */
 
     .about__inner {
         grid-template: none;
@@ -863,7 +840,6 @@
         grid-template: none;
     }
 
-    /* ---------------- */
 
     .tab-conrols {
         gap: 10px;
@@ -884,8 +860,6 @@
     .accordion-content__text {
         max-width: none;
     }
-
-    /* ------------- */
 
     .testimonials__inner {
         align-items: stretch;
@@ -914,13 +888,12 @@
         font-size: 12vw;
     }
 
-    /* -------------------- */
+
 
     .header__hero {
         padding-bottom: 80px;
     }
 
-    /* -------------------- */
 
     .about__img-conrol {
         bottom: 0;
@@ -939,7 +912,7 @@
         padding: 10px 15px;
     }
 
-    /* ---------------- */
+    
 
     .program__title {
         text-align: center;
@@ -983,8 +956,6 @@
         width: 10px;
     }
 
-    /* ---------------------- */
-
     .gallery__content {
         flex-direction: column;
     }
@@ -992,8 +963,6 @@
     .gallery__inner {
         margin-bottom: 20px;
     }
-
-    /* ---------------------- */
 
     .testimonials__inner {
         margin-bottom: 20px;
@@ -1020,7 +989,6 @@
         padding: 0 15px 45px;
     }
 
-    /* ----------------- */
 
     .program__action {
         grid-template: none;
@@ -1042,7 +1010,6 @@
         margin-bottom: 10px;
     }
 
-    /* -------------- */
 
     .testimonials__slide {
         padding: 30px 10px 30px;
