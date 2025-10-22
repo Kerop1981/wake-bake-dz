@@ -60,7 +60,7 @@
     position: absolute;
     inset: 5px;
     border-radius: 50%;
-    border: 1px solid #CEAAD0;
+    border: 1px solid var(--accent-color-2);
 
     opacity: 0;
     transition: var(--transition);
@@ -109,6 +109,8 @@
 }
 
 .about__grid-text {}
+
+/* ========================================================= */
 
 .program {}
 
@@ -187,7 +189,7 @@
 .program__price-text {
     line-height: 1.6;
     text-transform: uppercase;
-    color: #CEAAD0;
+    color: var(--accent-color-2);
     margin-bottom: 5px;
 }
 
@@ -341,7 +343,7 @@
 .accordion-content__title {
     text-transform: uppercase;
     line-height: 1.6;
-    color: #CEAAD0;
+    color: var(--accent-color-2);
     margin-bottom: 20px;
 }
 
@@ -359,7 +361,7 @@
 .accordion-content__icon {
     width: 24px;
     height: 24px;
-    border: 1px solid #CEAAD0;
+    border: 1px solid var(--accent-color-2);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -371,6 +373,8 @@
 .accordion-content__text {
     max-width: 274px;
 }
+
+/* ================================================ */
 
 .gallery {}
 
@@ -495,6 +499,7 @@
     width: 100%;
 }
 
+/* ================================================ */
 
 .testimonials {}
 
@@ -632,7 +637,7 @@
 
 .testimonials__student-inst {
     margin: 0 auto;
-    color: #CEAAD0;
+    color: var(--accent-color-2);
 }
 
 .testimonials__quote {}
@@ -660,6 +665,125 @@
     background: var(--accent-color);
 }
 
+/* ================================================ */
+
+.contact {
+    padding: 140px 0;
+    background: url("../img/decor/bg-contact.png") 50% 0% / cover no-repeat;
+}
+.contact__inner {
+    display: flex;
+    align-items: end;
+    gap: 84px;
+    position: relative;
+}
+.contact__inner::before {
+    content: url("../img/decor/berries.png");
+    position: absolute;
+    top: -4%;
+    left: 0;
+}
+.contact__inner::after {
+    content: url("../img/decor/berries-2.png");
+    position: absolute;
+    top: 4%;
+    right: 0;
+}
+.contact__img img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 30px #c6b0a14d);
+}
+.contact__body {
+    max-width: 420px;
+}
+.contact__title {
+    margin-bottom: 20px;
+}
+.contact__text {
+    margin-bottom: 40px;
+}
+.contact__form {
+}
+.contact__label {
+    margin-bottom: 10px;
+}
+.contact__input {
+    display: block;
+    width: 100%;
+    background: #00000000;
+    border: 1px solid var(--input-color);
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+    transition: var(--transition);
+    margin-bottom: 20px;
+}
+
+.contact__input:hover {
+    border-color: var(--accent-color);
+}
+
+.contact__input::placeholder {
+    color: var(--input-color);
+    transition: var(--transition);
+}
+
+.contact__input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+.contact__check-label {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    max-width: 288px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.contact__check-label a {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+.contact__check-label a:hover {
+    color: var(--accent-color);
+}
+.contact__checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid var(--input-color);
+    transition: var(--transition);
+    border-radius: 4px;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+}
+.contact__checkbox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../img/icons/check.svg") 50% 50% no-repeat;
+    opacity: 0;
+    transition: var(--transition);
+}
+.contact__checkbox:hover {
+    border: 1.5px solid var(--accent-color);
+}
+.contact__checkbox:checked {
+    background: var(--accent-color);
+    border: 1.5px solid var(--accent-color);
+}
+.contact__checkbox:checked::before {
+    opacity: 1;
+}
+
+
+
+
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
+/* ================================================ */
 
 
 @media (max-width: 1200px) {
@@ -674,6 +798,8 @@
         margin-top: 30px;
     }
 
+    /* ----------- */
+
     .program__top {
         flex-direction: column;
         align-items: stretch;
@@ -683,6 +809,13 @@
         flex-wrap: wrap;
     }
 
+    /* ----------- */
+
+    .contact__inner::after {
+        top: -20%;
+    }
+
+    /* ----------- */
 
     .footer__inner {
         justify-content: space-between;
@@ -708,6 +841,7 @@
         grid-column: 1/-1;
     }
 
+    /* -------------- */
 
     .accordion-list__control {
         padding: 25px 30px;
@@ -715,6 +849,13 @@
     }
 
     .accordion-content {
+        gap: 30px;
+    }
+
+    /* --------------------- */
+
+    .contact__inner {
+        align-items: center;
         gap: 30px;
     }
 }
@@ -749,6 +890,7 @@
         display: flex;
     }
 
+    /* ----------- */
 
     .program__action {
         max-width: none;
@@ -759,6 +901,7 @@
         display: none;
     }
 
+    /* ----------- */
 
     .gallery__inner {
         grid-template: none;
@@ -772,12 +915,24 @@
         display: none;
     }
 
+    /* ----------- */
 
     .testimonials__scrollbar.swiper-scrollbar {
         width: 50%;
         margin: 0 auto;
     }
 
+    /* ----------- */
+
+    .contact__inner {
+        justify-content: center;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
+    /* ----------- */
 
     .footer__inner {
         justify-content: center;
@@ -822,6 +977,7 @@
         margin: 0 0 30px;
     }
 
+    /* ---------------- */
 
     .about__inner {
         grid-template: none;
@@ -840,6 +996,7 @@
         grid-template: none;
     }
 
+    /* ---------------- */
 
     .tab-conrols {
         gap: 10px;
@@ -861,6 +1018,8 @@
         max-width: none;
     }
 
+    /* ------------- */
+
     .testimonials__inner {
         align-items: stretch;
         flex-direction: column;
@@ -868,6 +1027,12 @@
 
     .testimonials__nav {
         align-self: end;
+    }
+
+    /* ------------ */
+
+    .contact__inner::before {
+        content: none;
     }
 
 }
@@ -888,12 +1053,13 @@
         font-size: 12vw;
     }
 
-
+    /* -------------------- */
 
     .header__hero {
         padding-bottom: 80px;
     }
 
+    /* -------------------- */
 
     .about__img-conrol {
         bottom: 0;
@@ -912,7 +1078,7 @@
         padding: 10px 15px;
     }
 
-    
+    /* ---------------- */
 
     .program__title {
         text-align: center;
@@ -956,6 +1122,8 @@
         width: 10px;
     }
 
+    /* ---------------------- */
+
     .gallery__content {
         flex-direction: column;
     }
@@ -964,6 +1132,8 @@
         margin-bottom: 20px;
     }
 
+    /* ---------------------- */
+
     .testimonials__inner {
         margin-bottom: 20px;
     }
@@ -971,6 +1141,17 @@
     .testimonials__slide {
         align-items: center;
         flex-direction: column;
+        text-align: center;
+    }
+
+    /* ---------------------- */
+
+    .contact {
+        padding-bottom: 80px;
+    }
+
+    .contact__title,
+    .contact__text {
         text-align: center;
     }
 }
@@ -989,6 +1170,7 @@
         padding: 0 15px 45px;
     }
 
+    /* ----------------- */
 
     .program__action {
         grid-template: none;
@@ -1010,6 +1192,7 @@
         margin-bottom: 10px;
     }
 
+    /* -------------- */
 
     .testimonials__slide {
         padding: 30px 10px 30px;
