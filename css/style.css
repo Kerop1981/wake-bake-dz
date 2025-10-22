@@ -110,8 +110,6 @@
 
 .about__grid-text {}
 
-/* ========================================================= */
-
 .program {}
 
 .program__top {
@@ -374,8 +372,6 @@
     max-width: 274px;
 }
 
-/* ================================================ */
-
 .gallery {}
 
 .gallery__inner {
@@ -498,8 +494,6 @@
 .gallery__slide img {
     width: 100%;
 }
-
-/* ================================================ */
 
 .testimonials {}
 
@@ -665,8 +659,6 @@
     background: var(--accent-color);
 }
 
-/* ================================================ */
-
 .contact {
     padding: 140px 0;
     background: url("../img/decor/bg-contact.png") 50% 0% / cover no-repeat;
@@ -778,14 +770,6 @@
 }
 
 
-
-
-/* ================================================ */
-/* ================================================ */
-/* ================================================ */
-/* ================================================ */
-
-
 @media (max-width: 1200px) {
     .hero__img {
         margin: 0;
@@ -798,7 +782,6 @@
         margin-top: 30px;
     }
 
-    /* ----------- */
 
     .program__top {
         flex-direction: column;
@@ -809,13 +792,10 @@
         flex-wrap: wrap;
     }
 
-    /* ----------- */
 
     .contact__inner::after {
         top: -20%;
     }
-
-    /* ----------- */
 
     .footer__inner {
         justify-content: space-between;
@@ -841,7 +821,6 @@
         grid-column: 1/-1;
     }
 
-    /* -------------- */
 
     .accordion-list__control {
         padding: 25px 30px;
@@ -852,7 +831,6 @@
         gap: 30px;
     }
 
-    /* --------------------- */
 
     .contact__inner {
         align-items: center;
@@ -890,8 +868,6 @@
         display: flex;
     }
 
-    /* ----------- */
-
     .program__action {
         max-width: none;
         grid-template: repeat(3, auto) / minmax(280px, 1fr) 1fr;
@@ -901,7 +877,6 @@
         display: none;
     }
 
-    /* ----------- */
 
     .gallery__inner {
         grid-template: none;
@@ -915,14 +890,12 @@
         display: none;
     }
 
-    /* ----------- */
 
     .testimonials__scrollbar.swiper-scrollbar {
         width: 50%;
         margin: 0 auto;
     }
 
-    /* ----------- */
 
     .contact__inner {
         justify-content: center;
@@ -931,8 +904,6 @@
     .contact__img {
         display: none;
     }
-
-    /* ----------- */
 
     .footer__inner {
         justify-content: center;
@@ -977,7 +948,6 @@
         margin: 0 0 30px;
     }
 
-    /* ---------------- */
 
     .about__inner {
         grid-template: none;
@@ -996,7 +966,6 @@
         grid-template: none;
     }
 
-    /* ---------------- */
 
     .tab-conrols {
         gap: 10px;
@@ -1018,7 +987,6 @@
         max-width: none;
     }
 
-    /* ------------- */
 
     .testimonials__inner {
         align-items: stretch;
@@ -1029,7 +997,6 @@
         align-self: end;
     }
 
-    /* ------------ */
 
     .contact__inner::before {
         content: none;
@@ -1053,13 +1020,9 @@
         font-size: 12vw;
     }
 
-    /* -------------------- */
-
     .header__hero {
         padding-bottom: 80px;
     }
-
-    /* -------------------- */
 
     .about__img-conrol {
         bottom: 0;
@@ -1077,8 +1040,6 @@
     .about__grid-item {
         padding: 10px 15px;
     }
-
-    /* ---------------- */
 
     .program__title {
         text-align: center;
@@ -1122,8 +1083,6 @@
         width: 10px;
     }
 
-    /* ---------------------- */
-
     .gallery__content {
         flex-direction: column;
     }
@@ -1132,7 +1091,6 @@
         margin-bottom: 20px;
     }
 
-    /* ---------------------- */
 
     .testimonials__inner {
         margin-bottom: 20px;
@@ -1144,7 +1102,6 @@
         text-align: center;
     }
 
-    /* ---------------------- */
 
     .contact {
         padding-bottom: 80px;
@@ -1170,7 +1127,6 @@
         padding: 0 15px 45px;
     }
 
-    /* ----------------- */
 
     .program__action {
         grid-template: none;
@@ -1191,8 +1147,6 @@
     .accordion-content__item {
         margin-bottom: 10px;
     }
-
-    /* -------------- */
 
     .testimonials__slide {
         padding: 30px 10px 30px;
