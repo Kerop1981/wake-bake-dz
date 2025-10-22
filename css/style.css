@@ -110,7 +110,6 @@
 
 .about__grid-text {}
 
-/* ========================================================= */
 
 .program {}
 
@@ -373,9 +372,6 @@
 .accordion-content__text {
     max-width: 274px;
 }
-
-/* ================================================ */
-
 .gallery {}
 
 .gallery__inner {
@@ -500,17 +496,6 @@
 
 
 
-
-
-
-
-
-/* ================================================ */
-/* ================================================ */
-/* ================================================ */
-/* ================================================ */
-
-
 @media (max-width: 1200px) {
     .hero__img {
         margin: 0;
@@ -523,8 +508,6 @@
         margin-top: 30px;
     }
 
-    /* ----------- */
-
     .program__top {
         flex-direction: column;
         align-items: stretch;
@@ -534,7 +517,6 @@
         flex-wrap: wrap;
     }
 
-    /* ----------- */
 
     .footer__inner {
         justify-content: space-between;
@@ -560,7 +542,6 @@
         grid-column: 1/-1;
     }
 
-    /* -------------- */
 
     .accordion-list__control {
         padding: 25px 30px;
@@ -602,8 +583,6 @@
         display: flex;
     }
 
-    /* ----------- */
-
     .program__action {
         max-width: none;
         grid-template: repeat(3, auto) / minmax(280px, 1fr) 1fr;
@@ -613,7 +592,6 @@
         display: none;
     }
 
-    /* ----------- */
 
     .gallery__inner {
         grid-template: none;
@@ -627,7 +605,6 @@
         display: none;
     }
 
-    /* ----------- */
 
     .footer__inner {
         justify-content: center;
@@ -672,8 +649,6 @@
         margin: 0 0 30px;
     }
 
-    /* ---------------- */
-
     .about__inner {
         grid-template: none;
     }
@@ -690,8 +665,6 @@
     .about__grid {
         grid-template: none;
     }
-
-    /* ---------------- */
 
     .tab-conrols {
         gap: 10px;
@@ -730,13 +703,9 @@
         font-size: 12vw;
     }
 
-    /* -------------------- */
-
     .header__hero {
         padding-bottom: 80px;
     }
-
-    /* -------------------- */
 
     .about__img-conrol {
         bottom: 0;
@@ -754,8 +723,6 @@
     .about__grid-item {
         padding: 10px 15px;
     }
-
-    /* ---------------- */
 
     .program__title {
         text-align: center;
@@ -799,8 +766,6 @@
         width: 10px;
     }
 
-    /* ---------------------- */
-
     .gallery__content {
         flex-direction: column;
     }
@@ -823,8 +788,6 @@
     .modal__window {
         padding: 0 15px 45px;
     }
-
-    /* ----------------- */
 
     .program__action {
         grid-template: none;
